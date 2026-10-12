@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#06081a">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="BubblePop Master — premium HTML5 bubble shooter with 24 levels, star ratings, power-ups, and procedural sound.">
+<meta name="author" content="BubblePop Master">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="BubblePop">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="msapplication-TileColor" content="#06081a">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='35%25' cy='35%25' r='65%25'%3E%3Cstop offset='0' stop-color='%23b197fc'/%3E%3Cstop offset='0.6' stop-color='%234dabf7'/%3E%3Cstop offset='1' stop-color='%23254a9c'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='28' fill='url(%23g)'/%3E%3Ccircle cx='22' cy='22' r='8' fill='%23ffffff' fill-opacity='0.55'/%3E%3Ccircle cx='44' cy='44' r='4' fill='%23ffffff' fill-opacity='0.35'/%3E%3C/svg%3E">
+
+<title>BubblePop Master — Premium Puzzle Arcade</title>
+<link rel="stylesheet" href="style.css">
+</head>12
+<body>
+
+<!-- ============================================================
+     LOADING SCREEN
+     ============================================================ -->
+<div id="loading-screen" class="loading-screen" role="status" aria-live="polite" aria-label="Loading game">
+  <div class="loader">
+    <div class="loader-bubbles" aria-hidden="true">
+      <span class="lb lb1"></span>
+      <span class="lb lb2"></span>
+      <span class="lb lb3"></span>
+      <span class="lb lb4"></span>
+      <span class="lb lb5"></span>
+    </div>
+    <div class="loader-title">BubblePop Master</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-hint">Preparing bubbles…</div>
+  </div>
+</div>
+
+<!-- ============================================================
+     TOP HEADER
+     ============================================================ -->
+<header class="app-header" aria-label="App header">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">
+      <span class="brand-mark-dot"></span>
+      <span class="brand-mark-dot"></span>
+      <span class="brand-mark-dot"></span>
+      <span class="brand-mark-dot"></span>
+    </div>
+    <div class="brand-text">
+      <div class="brand-name">BubblePop Master</div>
+      <div class="brand-tag">Premium Puzzle Arcade</div>
+    </div>
+  </div>
+  <div class="header-actions" aria-hidden="true">
+    <span class="pill pill-live"><span class="live-dot"></span>LIVE</span>
+    <span class="pill">v1.0</span>
+  </div>
+</header>
+
+<!-- ============================================================
+     GAME STAGE
+     ============================================================ -->
+<main class="stage" role="application" aria-label="BubblePop Master game">
+  <canvas id="cv" width="480" height="800" aria-label="Bubble shooter playfield"></canvas>
+</main>
+
+<!-- ============================================================
+     BOTTOM FOOTER
+     ============================================================ -->
+<footer class="app-footer" aria-label="App footer">
+  <div class="footer-left">
+    <span class="footer-key">A / ←</span> aim
+    <span class="footer-key">D / →</span> aim
+    <span class="footer-key">Space</span> shoot
+  </div>
+  <div class="footer-right">
+    <span class="footer-key">S</span> swap
+    <span class="footer-key">P</span> pause
+    <span class="footer-key">Esc</span> menu
+  </div>
+</footer>
+
+<noscript>
+  <div class="noscript-card">
+    <h1>BubblePop Master</h1>
+    <p>This game requires JavaScript. Please enable JavaScript and reload the page.</p>
+  </div>
+</noscript>
+
+<script src="script.js"></script>
+</body>
+</html>
